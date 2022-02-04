@@ -2,6 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span, p{
+    color: lightgrey;
 }
 
 .flex{
@@ -22,6 +27,14 @@
     float: right;
 }
 
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -35,7 +48,22 @@
 .buy{
     height: 7vh;
     width: 85vw;
-    background-color: red;  
+    background-color: black;
+    padding: 5px;
+}
+
+.btn-pay{
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 35px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 40px;
 }
 
 .main-side{
@@ -45,7 +73,7 @@
 .nav-section-left{
     width: 15vw;
     height: 93vh;
-    background-color: blue;
+    background-color: black;
 }
 
 .content{
@@ -60,6 +88,73 @@
     background-color: greenyellow;
 }
 
-.player{
+.side-menu-images{
+    width: 10%;
+}
 
+.nav-section-left{
+    flex-direction: column;
+}
+
+.nav-section-left > div{
+    margin-top: .8em;
+    padding-left: 1em;
+    
+} 
+
+.nav-section-left > div > span, .flex > span, .account > div > span{ 
+    padding-left: .5em;
+    align-self: center;
+}
+
+.playlist{
+    height: 100%;
+}
+
+.playlist > p{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: .8em;
+}
+
+.playlist > .flex > i{
+    font-size: 3em;
+    color: lightgrey;
+}
+
+.playlist-list{
+    overflow: auto;
+    height: 50%;
+}
+
+.playlist-list > p{
+    padding-top: 1em;
+}
+
+.account> div > img{
+    width: 10%;
+}
+
+.account > div{
+    padding:1em;
+}
+
+#logo{
+    width: 60%;
+    padding: 1rem;
+}
+
+#active-left{
+    border-left: .2em solid #adff2f;
+    padding-left: .8em;
+    color: white;
+}
+
+#color-white{
+    color: white;
+}
+
+#hr-user{
+    width: 90%;
+    text-align: center
 }
