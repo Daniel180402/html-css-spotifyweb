@@ -16,6 +16,7 @@ footer{
     background-color: orchid;
     position: relative;
     z-index: 10;
+    justify-content: space-between;
 }
 
 span, p{
@@ -32,6 +33,10 @@ h2, h3{
 
 .flex{
     display: flex;
+}
+
+.column{
+    flex-direction: column;
 }
 
 .col-left{
@@ -146,8 +151,13 @@ h2, h3{
     height: calc(100% - 110px);
 }
 
+.container-music > p{
+    padding-bottom: 1.5rem;
+}
+
 .music{
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .card{
@@ -156,8 +166,71 @@ h2, h3{
     margin-right: 2rem;
 }
 
+.music-text{
+    text-align: center;
+    padding-top: 1rem;
+}
+
 .card > img{
     object-fit: contain;
+}
+
+.secondary-title{
+    padding: 1rem 0;
+}
+
+.round-image{
+    border-radius: 50%;
+}
+
+.song-info{
+    background-color: chartreuse;
+    width: 300px;
+}
+
+.song-info  img{
+    width: 25%;
+    padding-top: 1.5rem;
+    padding-left: .7rem;
+}
+
+.song-info > div{
+    padding-top: 3.5rem;
+    padding-left: 1.5rem;
+} 
+
+.song-info > div > i{
+    padding-left: 1rem;
+    font-size: 1.2em;
+}
+
+.song-info > p{
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+}
+
+.player{
+    background-color: cornflowerblue;
+    width: 600px;
+}
+
+.audio-settings{
+    background-color: darkcyan;
+    width: 300px;
+}
+
+.audio-settings i{
+    padding-left: 1rem;
+    font-size: 1.2em;
+}
+
+.audio-settings > .icon-box{
+    padding-top: 3.5rem;
+}
+
+.audio-settings > div{
+    padding-top: 4rem;
+    padding-left: 1rem;
 }
 
 #active-left{
@@ -176,5 +249,17 @@ h2, h3{
 }
 
 #title{
-    padding: 2rem 0;
+    padding-bottom: 2rem;
+}
+
+#active-option{
+    border-bottom: 3px solid #adff2f;
+    padding-bottom: .8rem;
+}
+
+#audiobar{
+    width: 120px;
+    height: 6px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 40px;
 }
