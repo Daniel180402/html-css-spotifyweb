@@ -5,56 +5,48 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+main{
+    height: calc(100vh - 90px);
+    background-color: orange;
+    display: flex;
+}
+
+footer{
+    height: 90px;
+    background-color: orchid;
+}
+
 span, p{
     color: lightgrey;
+}
+
+p{
+    padding: 0.4rem 0rem;
 }
 
 .flex{
     display: flex;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+.col-left{
+    width: 220px;
+    background-color: rgb(0, 0, 0);
 }
 
-.float-left{
-    float: left;
+.col-right{
+    width: calc(100% - 220px);
+    background-color: chartreuse;
 }
 
-.float-right{
-    float: right;
+#top-ad{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    height: 80px;
 }
 
-.relative{
-    position: relative;
-}
-
-.absolute{
-    position: absolute;
-}
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    background-color: aqua;
-}
-
-.main-middle{
+#top-ad > div{
     justify-content: flex-end;
-}
-
-.buy{
-    height: 7vh;
-    width: 85vw;
-    background-color: black;
-    padding: 5px;
-}
-
-.btn-pay{
-    justify-content: flex-end;
-    margin-top: 10px;
+    padding: 1rem;
 }
 
 .btn{
@@ -66,82 +58,54 @@ span, p{
     border-radius: 40px;
 }
 
-.main-side{
-    justify-content: flex-start;
-}
-
-.nav-section-left{
-    width: 15vw;
-    height: 93vh;
-    background-color: black;
-}
-
-.content{
-    width: 85vw;
-    height: 86vh;
-    background-color: violet;
-}
-
-.bottom-player{
-    width: 100vw;
-    height: 7vh;
-    background-color: greenyellow;
-}
-
-.side-menu-images{
-    width: 10%;
-}
-
-.nav-section-left{
+.nav-top{
+    height: calc(100% - 85px);
+    display: flex;
     flex-direction: column;
 }
 
-.nav-section-left > div{
-    margin-top: .8em;
-    padding-left: 1em;
-    
-} 
-
-.nav-section-left > div > span, .flex > span, .account > div > span{ 
-    padding-left: .5em;
-    align-self: center;
+.nav-bottom{
+    height: 85px;
+    align-items: center;
 }
 
-.playlist{
-    height: 100%;
+.nav-logo{
+    padding: 1rem;
+    height: 80px;
 }
 
-.playlist > p{
-    font-size: 1.1em;
-    font-weight: bold;
-    padding-bottom: .8em;
+.nav-menu > div{
+    padding-left: 1rem;
+    padding-top: .5rem;
 }
 
-.playlist > .flex > i{
+.side-menu-images{
+    width: 15%;
+}
+
+.nav-playlist{
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.nav-playlist > .flex > i{
     font-size: 3em;
     color: lightgrey;
 }
 
-.playlist-list{
-    overflow: auto;
-    height: 50%;
+.nav-menu > div > span, .flex > span, .account > .flex{ 
+    padding-left: .5em;
+    align-self: center;
 }
 
-.playlist-list > p{
-    padding-top: 1em;
+.playlist-list{
+    overflow: auto;
+    height: 300px;
 }
 
 .account> div > img{
     width: 10%;
-}
-
-.account > div{
-    padding:1em;
-}
-
-#logo{
-    width: 60%;
-    padding: 1rem;
 }
 
 #active-left{
@@ -156,5 +120,5 @@ span, p{
 
 #hr-user{
     width: 90%;
-    text-align: center
+    margin: .6rem auto;
 }
