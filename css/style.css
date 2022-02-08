@@ -223,42 +223,6 @@ h2, h3{
     color: white;
 }
 
-/* .audio-settings i{
-    padding-left: 1rem;
-    font-size: 1.2em;
-}
-
-.audio-settings > .icon-box{
-    padding-top: 3.5rem;
-}
-
-.audio-settings > div{
-    padding-top: 4rem;
-    padding-left: 1rem;
-}
-
-.player-buttons{
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: space-around;
-    padding-top: .8rem;
-}
-
-.player-buttons > i{
-    font-size: 2rem;
-}
-
-.player-timeline{
-    justify-content: center;
-    height: 100%;
-}
-
-.player-timeline > p{
-    align-self: center;
-    padding: 0 .4rem;
-} */ 
-
 #active-left{
     border-left: .2em solid #adff2f;
     padding-left: .8em;
