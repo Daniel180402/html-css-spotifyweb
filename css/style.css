@@ -7,16 +7,18 @@
 
 main{
     height: calc(100vh - 90px);
-    background-color: orange;
     display: flex;
 }
 
 footer{
     height: 90px;
-    background-color: orchid;
-    position: relative;
-    z-index: 10;
+    align-items: center;
     justify-content: space-between;
+    background-color: black;
+}
+
+i{
+    color: lightgrey;
 }
 
 span, p{
@@ -138,6 +140,7 @@ h2, h3{
     flex-direction: row;
     justify-content: space-around;
     height: 30px;
+    padding-bottom: 3rem;
 }
 
 .option > a{
@@ -184,42 +187,43 @@ h2, h3{
 }
 
 .song-info{
-    background-color: chartreuse;
-    width: 300px;
+    flex-basis: 300px;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.song-info  img{
-    width: 25%;
-    padding-top: 1.5rem;
-    padding-left: .7rem;
-}
-
-.song-info > div{
-    padding-top: 3.5rem;
-    padding-left: 1.5rem;
-} 
-
-.song-info > div > i{
-    padding-left: 1rem;
-    font-size: 1.2em;
-}
-
-.song-info > p{
-    padding-top: 2.5rem;
-    padding-left: 1rem;
+#image{
+    width: 60px;
 }
 
 .player{
-    background-color: cornflowerblue;
     width: 600px;
+    text-align: center;
+    row-gap: 10px;
+}
+
+.top-plater{
+    font-size: 1.8rem;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.player-bottom{
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
 }
 
 .audio-settings{
-    background-color: darkcyan;
-    width: 300px;
+    flex-basis: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
 }
 
-.audio-settings i{
+/* .audio-settings i{
     padding-left: 1rem;
     font-size: 1.2em;
 }
@@ -232,6 +236,28 @@ h2, h3{
     padding-top: 4rem;
     padding-left: 1rem;
 }
+
+.player-buttons{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: .8rem;
+}
+
+.player-buttons > i{
+    font-size: 2rem;
+}
+
+.player-timeline{
+    justify-content: center;
+    height: 100%;
+}
+
+.player-timeline > p{
+    align-self: center;
+    padding: 0 .4rem;
+} */ 
 
 #active-left{
     border-left: .2em solid #adff2f;
@@ -258,8 +284,30 @@ h2, h3{
 }
 
 #audiobar{
-    width: 120px;
+    width: 50%;
     height: 6px;
-    background-color: rgb(77, 77, 77);
-    border-radius: 40px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+}
+
+#curret-audio{
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .6);
+
+}
+
+#timeline{
+    width: 60%;
+    height: 5px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 5px;
+}
+
+#time{
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .6);
 }
