@@ -75,6 +75,7 @@ h2, h3{
     border: 1px solid white;
     color: white;
     border-radius: 40px;
+    transition: all 1s ease-in-out;
 }
 
 .nav-top{
@@ -126,6 +127,10 @@ h2, h3{
     height: 200px;
 }
 
+.playlist-list > p{
+    color: lightgray;
+}
+
 .account{
     position: relative;
     z-index: 10;
@@ -152,7 +157,7 @@ h2, h3{
 
 .option > a{
     text-decoration: none;
-    color: white;
+    color: lightgray;
     white-space: nowrap;
     padding: 0 .5rem;
 }
@@ -177,6 +182,7 @@ h2, h3{
     flex-direction: column;
     width: calc(94% / 6);
     margin: .5%;
+    position: relative;
 }
 
 .music-text{
@@ -354,7 +360,23 @@ h2, h3{
     }
 } 
 
+.card > i{
+    position: absolute;
+    top: 30%;
+    left: 47%;
+}
 
+.card  > img:hover{
+    filter:brightness(40%);
+}
+
+p:hover, span:hover, i:hover, a:hover{
+    color: white;
+}
+
+.btn:hover{
+    padding: 15px 40px;
+}
 
 .active-left{
     border-left: .2em solid #adff2f;
@@ -391,8 +413,7 @@ h2, h3{
     height: 100%;
     width: 50%;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, .6);
-
+    background-color: rgba(255, 255, 255, .6);    
 }
 
 #timeline{
@@ -407,6 +428,10 @@ h2, h3{
     width: 15%;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .6);
+}
+
+#time:hover, #curret-audio:hover{
+    background-color: #adff2f;
 }
 
 #heart-folder > i{
