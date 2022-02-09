@@ -18,11 +18,7 @@ footer{
     background-color: #282828;
 }
 
-i{
-    color: lightgrey;
-}
-
-span, p{
+span, p, i{
     color: lightgrey;
 }
 
@@ -42,19 +38,20 @@ h2, h3{
     flex-direction: column;
 }
 
+.col-left, .col-right{
+    height: 100%;
+    overflow: hidden;
+}
+
 .col-left{
     width: 220px;
     background-color: rgb(0, 0, 0);
-    height: 100%;
-    overflow: hidden;
     min-height: 500px;
 }
 
 .col-right{
     width: calc(100% - 220px);
     background-color: #141922;
-    height: 100%;
-    overflow: hidden;
 }
 
 #top-ad{
@@ -80,8 +77,6 @@ h2, h3{
 
 .nav-top{
     height: calc(100% - 85px);
-    display: flex;
-    flex-direction: column;
 }
 
 .nav-bottom{
@@ -107,14 +102,12 @@ h2, h3{
 }
 
 .nav-playlist{
-    flex-direction: column;
     padding-left: 1rem;
     padding-top: 1rem;
 }
 
 .nav-playlist > .flex > i{
     font-size: 3em;
-    color: lightgrey;
 }
 
 .nav-menu > div > span, .flex > span, .account > .flex{ 
@@ -125,10 +118,6 @@ h2, h3{
 .playlist-list{
     overflow: auto;
     height: 200px;
-}
-
-.playlist-list > p{
-    color: lightgray;
 }
 
 .account{
@@ -179,7 +168,6 @@ h2, h3{
 }
 
 .card{
-    flex-direction: column;
     width: calc(94% / 6);
     margin: .5%;
     position: relative;
@@ -207,10 +195,6 @@ h2, h3{
     color: white;
     align-items: center;
     justify-content: space-evenly;
-}
-
-#image{
-    width: 60px;
 }
 
 .player{
@@ -436,4 +420,8 @@ p:hover, span:hover, i:hover, a:hover{
 
 #heart-folder > i{
     padding: .2rem;
+}
+
+#image{
+    width: 60px;
 }
