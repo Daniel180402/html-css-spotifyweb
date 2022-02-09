@@ -168,14 +168,15 @@ h2, h3{
 }
 
 .music{
+    width: 100%;
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 
 .card{
     flex-direction: column;
-    width: calc((100% / 6) - 2rem);
-    margin-right: 2rem;
+    width: calc(94% / 6);
+    margin: .5%;
 }
 
 .music-text{
@@ -232,13 +233,6 @@ h2, h3{
     color: white;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px){
-
-    .card{
-        min-width: 20%;
-    }
-}
-
 @media screen and (min-width: 992px) and (max-width: 1199px){
     .music-options{
         width: 80%;
@@ -247,7 +241,7 @@ h2, h3{
     }
 
     .card{
-        min-width: 20%;
+        width: calc(94% / 6);
     }
 }
 
@@ -259,7 +253,7 @@ h2, h3{
     }
 
     .card{
-        min-width: 40%;
+        width: calc(94% / 4);
     }
 
     .song-info{
@@ -292,7 +286,7 @@ h2, h3{
     }
 
     .card{
-        min-width: 220px;
+        width: calc(94% / 2);
     }
 
     .song-info{
